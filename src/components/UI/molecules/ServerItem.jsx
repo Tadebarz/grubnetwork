@@ -4,7 +4,7 @@ import { Map, UsersRound } from 'lucide-react'
 
 const ServerItem = ({name, mapType, capacity, img}) => {
   return (
-    <div className='relative flex flex-col w-[288px] h-[348px] text-white rounded-md'>
+    <div className='relative flex flex-col w-[288px] h-[348px] rounded-md'>
       <div className="absolute inset-0 bg-[#242424] opacity-20 backdrop-blur-md rounded-md"></div>
       <div className='z-10'>
         <div className='h-[40%] w-full'>
@@ -14,14 +14,19 @@ const ServerItem = ({name, mapType, capacity, img}) => {
         <div className='flex flex-col p-5'>
           <p className='text-xl'>{name}</p>
           <div className='flex'>
-            <Map/>
+            <Map className='mr-[15px]'/>
             <p>{mapType} Map</p>
           </div>
-          <div className='flex'>
-          <UsersRound />
-            <p>{capacity}</p>
+          <div className='flex items-center'>
+            <UsersRound className='mr-[15px]'/>
+            <div className='w-full bg-[#242424] flex rounded-md h-[15px] items-center relative'>
+              <div className={`w-[${capacity}%] h-full bg-[#676767] rounded-md relative`} style={{ width: `${capacity}%` }}></div>
+              <p className='absolute z-2 text-[12px] w-full text-center'>{capacity}/100</p>
+            </div>
           </div>
-          <ButtonConnect/>
+          <div className='mt-[30px] flex justify-center'>
+            <ButtonConnect/>
+          </div>
         </div>
       </div>
     </div>

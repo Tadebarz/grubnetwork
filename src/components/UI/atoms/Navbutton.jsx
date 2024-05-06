@@ -3,7 +3,7 @@ import Icon from './Icon'
 const Navbutton = ({icon, text ,isBig}) => {
   return (
     <div>
-        <p className={`text-white ${isBig ? 'font-extrabold text-4xl' : 'text-xl font-bold'}`}>{text}</p>
+        <p className={` ${isBig ? 'font-extrabold text-4xl' : 'text-xl font-bold'}`}>{text}</p>
     </div>
   )
 }

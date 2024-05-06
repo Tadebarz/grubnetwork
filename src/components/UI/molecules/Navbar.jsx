@@ -9,27 +9,25 @@ const Navbar = () => {
             'text': 'Home'
         },
         {
-            'icon': 'credit-card',
-            'text': 'Shop'
-        },
-        {
-            'icon': '',
-            'text': 'Grub Network',
-            'isBig': true
-        },
-        {
             'icon': 'users',
             'text': 'Stats'
         },
         {
             'icon': 'users',
             'text': 'Discord'
-        }
+        },
+        {
+            'icon': '',
+            'text': 'Shop',
+            'isBig': true
+        },
     ]
 
   return (
-    <div className='flex bg-gradient-to-b py-[20px] px-[30px] ] fixed w-full z-[11] justify-center'>
-        {/* <p className='text-white font-extrabold text-3xl'>Grub Network</p> */}
+    <div className='flex bg-gradient-to-b  py-[20px] px-[200px] fixed w-full z-[11] justify-between uppercase text-[#e4dad1]'>
+        <div className='h-full flex items-center'>
+            <p className='text-5xl font-bold'>GN</p>
+        </div>
         <div className='flex items-center w-[60%] justify-around'>
             {navigationItems.map((item, index) => (
                 <Navbutton
