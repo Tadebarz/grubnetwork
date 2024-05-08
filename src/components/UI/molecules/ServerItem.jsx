@@ -5,7 +5,7 @@ import { Map, UsersRound } from 'lucide-react'
 const ServerItem = ({name, mapType, capacity, img}) => {
   return (
     <div className='relative flex flex-col w-[288px] h-[348px] rounded-md'>
-      <div className="absolute inset-0 bg-[#242424] opacity-20 backdrop-blur-md rounded-md"></div>
+      <div className="absolute inset-0 bg-[#FFFFFF] opacity-10 backdrop-blur-md rounded-md"></div>
       <div className='z-10'>
         <div className='h-[40%] w-full'>
           <img src={img} className='w-full h-full rounded-t-md' alt="Server image" />

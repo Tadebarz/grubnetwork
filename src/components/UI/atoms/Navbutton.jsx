@@ -1,5 +1,4 @@
 import React from 'react'
-import Icon from './Icon'
 const Navbutton = ({icon, text ,isBig}) => {
   return (
     <div>

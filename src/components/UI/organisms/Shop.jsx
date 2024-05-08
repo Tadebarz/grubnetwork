@@ -55,9 +55,9 @@ const Shop = () => {
   ];
 
   return (
-    <div ref={shopRef} className={`relative h-screen flex flex-col items-center p-[200px] justify-around transition-opacity ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-      <div className='text-white text-5xl'>
-        <p>Shop</p>
+    <div ref={shopRef} className={`relative h-screen flex flex-col items-center p-[200px] justify-around  transition-opacity ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+      <div className='text-white text-5xl '>
+        <p className='text-9xl font-bold'>Shop</p>
       </div>
       <div className='flex w-[80%] justify-around'>
         {dummyObjArray.map((server, index) => (
