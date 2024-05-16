@@ -8,7 +8,7 @@ const ServerItem = ({name, mapType, capacity, img}) => {
       <div className="absolute inset-0 bg-[#FFFFFF] opacity-10 backdrop-blur-md rounded-md"></div>
       <div className='z-10'>
         <div className='h-[40%] w-full'>
-          <img src={img} className='w-full h-full rounded-t-md' alt="Server image" />
+          {/* <img src={img} className='w-full h-full rounded-t-md' alt="Server image" /> */}
         </div>
         
         <div className='flex flex-col p-5'>

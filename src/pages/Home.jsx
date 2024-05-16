@@ -12,6 +12,7 @@ const Home = () => {
       <video autoPlay muted loop className='absolute inset-0 w-full h-full object-cover blur'>
         <source src={russiaedit} type="video/mp4" />
       </video>
+      
       <div className="absolute inset-0 h-full bg-[#242424] opacity-50 backdrop-blur-md"></div>
 
       <Navbar />
